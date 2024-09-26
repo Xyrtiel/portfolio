@@ -1,0 +1,163 @@
+<html lang="fr">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="presentation.png" type="image/png">
+    <title>Mon Portfolio</title>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="images/profil.png" alt="profile picture" class="profile-picture" />
+            <p class="portfolio-title"><span>Mon</span> Portfolio !</p>
+        </div>
+        <ul class="menu">
+            <li><a href="#introduction">A Propos de Moi</a></li>
+            <li><a href="#projets">Mes Projets</a></li>
+            <li><a href="#competences">Mes Compétences</a></li>
+            <li><a href="#contacts">Me Contacter</a></li>
+            <li><a href="blog.html">Mon Blog</a></li>
+        </ul>
+    </header>
+
+    <section id="introduction" class="intro-section">
+        <div class="left">
+            <h4>A PROPOS DE MOI</h4>
+            <p>Etudiant en première année à EPITECH, passionné par la demande de
+                l’Informatique et à la recherche d’une alternance. Compétences déjà
+                acquises en programmation (C/C++, HTML, SQL), gestion de bases de
+                données, réseaux informatiques et systèmes embarqués. Intéréssé énormément au jeu vidéo
+                et à son domaine. Motivé à intégrer une entreprise pour participer à des projets concrets, 
+                développer des compétences techniques, et renforcer ses capacités de travail en équipe.
+                Sérieux, rigoureux, désireux d’apprendre, prêt à contribuer activement au
+                sein d’une structure dynamique.<p>
+            <br>
+            <button><a href="cv/CV_Geoffrey_Deparcy.pdf">En savoir plus</a></button>
+        </div>
+        <div class="right">
+            <img src="images/jeu_video.png" class="game-image">
+        </div>
+    </section>
+
+    <section id="projets" class="projects-section">
+        <img src="images/project.png" alt="project" class="projet" />
+        <h4 class="mini_title">Mes Différents Projets</h4>
+        <h2 class="title">Les Projets Principaux réalisés</h2>
+        <div class="projects">
+            <div class="project">
+                <img src="images/food_site.png" class="project-image">
+                <p>Site Internet de Nourriture</p>
+                <a href="codes/food_site/index.html">Regarder</a>
+            </div>
+            <div class="project">
+                <img src="images/python_game.png" class="project-image">
+                <p>Premier vrai petit Jeu sur Python</p>
+                <a href="">Regarder</a>
+            </div>
+            <div class="project">
+                <img src="images/formulaire.png" class="project-image">
+                <p>Formulaire trié d'un Patient</p>
+                <a href="codes/formulaire_patient/index.html">Regarder</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="competences" class="competences-section">
+        <h2 class="title">Mes Compétences</h2>
+        <div class="about">
+            <div class="right">
+                <h3>Mes Compétences en Langages de Programmation</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Langage</th>
+                            <th>Niveau de Compétence</th>
+                            <th>Années d'Expérience</th>
+                            <th>Projets Réalisés</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <img src="logo/c,c++.png" alt="C/C++" class="logo"> C/C++
+                            </td>
+                            <td>Expert</td>
+                            <td>3 ans</td>
+                            <td>5+</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <img src="logo/python.png" alt="Python" class="logo"> Python
+                            </td>
+                            <td>Expert</td>
+                            <td>5 ans</td>
+                            <td>5+</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <img src="logo/js.png" alt="Java" class="logo"> Java
+                            </td>
+                            <td>Intermédiaire</td>
+                            <td>1 an</td>
+                            <td>2</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <img src="logo/html,css.png" alt="HTML/CSS" class="logo"> HTML/CSS
+                            </td>
+                            <td>Expert</td>
+                            <td>2 ans</td>
+                            <td>4</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <img src="logo/XML,XSL.png" alt="XML/XSL" class="logo"> XML/XSL
+                            </td>
+                            <td>Intermédiaire</td>
+                            <td>1 an</td>
+                            <td>1</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <section id="reservation">
+        <h2 class="title">Me Contacter</h2>
+        <form action="process.php" method="POST">
+            <label>Votre Nom et Prénom</label>
+            <input type="text" name="name" required>
+            <label>Votre Email</label>
+            <input type="email" name="email" required>
+            <label for="comment">Commentaire</label>
+            <textarea id="comment" name="comment" placeholder="Écrivez votre commentaire ici..." required></textarea>
+            <input type="submit" value="Envoyer un Message">
+        </form>
+    </section>    
+
+    <footer>
+        <div class="services_list">
+            <div class="service">
+                <img src="icones/pin.png" alt="">
+                <h2>Adresse</h2>
+                <p>30350 Domessargues</p>
+            </div>
+            <div class="service">
+                <img src="icones/email.png" alt="">
+                <h2>Email</h2>
+                <p>geo.deparcy@gmail.com</p>
+            </div>
+            <div class="service">
+                <img src="icones/call.png" alt="">
+                <h2>Numéro de Téléphone</h2>
+                <p>0769172333</p>
+            </div>
+        </div>
+        <hr>
+        <p class="footer_text">Réalisé par <span>Xyrtiel</span> | Tous les droits sont réservés.</p>
+    </footer>
+</body>
+</html>

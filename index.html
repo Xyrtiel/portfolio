@@ -127,7 +127,7 @@
 
     <section id="reservation">
         <h2 class="title">Me Contacter</h2>
-        <form action="process.php" method="POST">
+        <form id="contactForm" action="process.php" method="POST">
             <label>Votre Nom et Prénom</label>
             <input type="text" name="name" required>
             <label>Votre Email</label>
@@ -136,8 +136,9 @@
             <textarea id="comment" name="comment" placeholder="Écrivez votre commentaire ici..." required></textarea>
             <input type="submit" value="Envoyer un Message">
         </form>
-    </section>    
-
+        <div id="message"></div> 
+    </section>
+    
     <footer>
         <div class="services_list">
             <div class="service">
@@ -159,5 +160,8 @@
         <hr>
         <p class="footer_text">Réalisé par <span>Xyrtiel</span> | Tous les droits sont réservés.</p>
     </footer>
+    
+    <script src="script.js"></script>
+
 </body>
 </html>

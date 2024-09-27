@@ -507,7 +507,17 @@ hr {
     color: #27ae60;
 }
 
+@keyframes animate {
+    0% { transform: scale(0); }
+    100% { transform: scale(1); }
+}
+
 @media screen and (max-width: 700px) {
+    body {
+        font-size: 14px;
+        padding: 0 5%;
+    }
+
     header {
         flex-direction: column;
         justify-content: center;
@@ -515,14 +525,68 @@ hr {
         height: auto;
     }
 
+    .logo {
+        margin-bottom: 10px;
+    }
+
     .menu {
         margin-top: 10px;
         flex-direction: column;
         align-items: center;
         gap: 15px;
+        padding: 0;
     }
 
-    .logo {
-        margin-bottom: 10px;
+    .menu li {
+        margin: 0;
+    }
+
+    #introduction {
+        flex-direction: column;
+        text-align: center;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    #introduction .left, 
+    #introduction .right {
+        width: 100%;
+    }
+
+    #introduction .left button {
+        margin: 20px auto;
+    }
+
+    #introduction .right img {
+        width: 80%;
+    }
+
+    .projects .project {
+        width: 100%;
+    }
+
+    #reservation form {
+        width: 100%;
+    }
+
+    .footer_text {
+        font-size: 12px;
+    }
+
+    .portfolio-title {
+        font-size: 2em;
+    }
+
+    .title {
+        font-size: 1.8em;
+    }
+
+    .mini_title {
+        font-size: 14px;
+    }
+
+    .projects {
+        flex-direction: column;
+        align-items: center;
     }
 }

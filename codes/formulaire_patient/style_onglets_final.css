@@ -1,0 +1,63 @@
+*{
+	margin: 0 ;
+	padding: 0 ;
+	box-sizing: border-box ;
+	font-family: 'Roboto', sans-serif ;
+}
+
+
+/** Realisation des onglets CSS **/
+.onglets {
+	overflow: hidden ;
+	background-color: #D0EFFF ;
+}
+
+/** Modification des boutons de la page **/
+.onglets button {
+	background-color: inherit ;
+	/** Mot-clé qui spécifie qu’une propriété doit hériter de sa valeur de son élément parent **/
+	letter-spacing: 2px ;
+	float: left ;
+	border: none ;
+	outline: 0 ;
+	color: #000 ;
+	cursor: pointer ;
+	padding: 14px 50px ;
+	transition: 0.5s ;
+	font-size: 14px ;
+}
+
+h3 {
+	font-size: 20px ;
+	color: #03224C ;
+}
+
+.onglets button:hover {
+	background-color: #ABDDFC ;
+}
+
+.onglets button:active {
+	background-color: #2A9DF4 ;
+}
+
+.contenu_onglets {
+	display: none ;
+	flex-direction: column ;
+	padding: 6px 50 px ;
+	animation: animation 0.5s ease-out ;
+}
+.ongletlinks.active {
+  background-color: #333;
+  color: #fff;
+}
+.onglets button.active {
+	background-color: #333;
+	color: #fff;
+}
+
+/** Animation **/ 
+
+@keyframes animation {
+	from {opacity: 0;}
+	to {opacity: 1;}
+}

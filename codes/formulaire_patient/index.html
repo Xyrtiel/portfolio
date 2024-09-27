@@ -1,0 +1,208 @@
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <link rel="icon" type="image/png" sizes="16x16" href="logoCHU.jpg">
+      <title> Formulaire du Patient </title>
+      <link rel="stylesheet" href="style_onglets_final.css"><script src="style_onglets_final.js"></script><script src="dynamicali.js"></script><script src="dynamicalisation.js" id="rangement"></script></head>
+   <body>
+      <h1> Formulaire du Patient </h1>
+      <table width="1250" border="1">
+         <tr style="color: #fff; background: #ADC2D0;">
+            <th width="50%" colspan="4">Identifiant</th>
+            <th width="50%" colspan="2">Formulaire</th>
+         </tr>
+         <tr style="background: #F7F7F9;">
+            <th width="12.5%" colspan="1">Patient</th>
+            <th width="12.5%" colspan="1">Séjour</th>
+            <th width="12.5%" colspan="1">Contexte</th>
+            <th width="12.5%" colspan="1">Date Modif.</th>
+            <th width="25%" colspan="1">Code</th>
+            <th width="25%" colspan="1">Libellé</th>
+         </tr>
+         <tr>
+            <td>123456789</td>
+            <td>12312312</td>
+            <td>0000000</td>
+            <td>01/02/2022 12:05:00</td>
+            <td>RECUEIL_DONNEE</td>
+            <td>RECUEIL_DONNEE</td>
+         </tr>
+      </table>
+      <div class="onglets"><button type="ongletlinks" onclick="openOnglet(event, 'MACROCIBLE')" id="ongletlink1">MACROCIBLE</button><button type="ongletlinks" onclick="openOnglet(event, 'MTEVD')" id="ongletlink2">MTEVD</button><button type="ongletlinks" onclick="openOnglet(event, 'ACT-VIE-BESOINS')" id="ongletlink3">ACTIVITES DE LA VIE QUOTIDIENNE et BESOINS PERTURBES</button><button type="ongletlinks" onclick="openOnglet(event, 'AIDE')" id="ongletlink4">AIDANTS ou Entourage / Famille / Représentant</button><button type="ongletlinks" onclick="openOnglet(event, 'FRAGILE')" id="ongletlink5">GRILLE de FRAGILITE</button></div>
+      <div class="contenu_onglets" id="MACROCIBLE">
+         <table width="1600" border="1">
+            <tr style="background: #F1F8FF;">
+               <th width="100%" colspan="2">Macrocible</th>
+            </tr>
+            <tr style="background: #FFF3E3;">
+               <th width="45%" colspan="1">Libellé</th>
+               <th width="45%" colspan="1">Valeur</th>
+            </tr>
+            <tr>
+               <td style="font-family: Lucida Console, Courier, monospace;font-size: 14px;">Synthèse (MTEVD)</td>
+               <td style="font-family: Lucida Console, Courier, monospace;font-size: 14px;"></td>
+            </tr>
+            <tr>
+               <td style="font-family: Lucida Console, Courier, monospace;font-size: 14px;">Synthèse (Besoins perturbés)</td>
+               <td style="font-family: Lucida Console, Courier, monospace;font-size: 14px;"></td>
+            </tr>
+            <tr>
+               <td style="font-family: Lucida Console, Courier, monospace;font-size: 14px;">Commentaires</td>
+               <td style="font-family: Lucida Console, Courier, monospace;font-size: 14px;"></td>
+            </tr>
+         </table>
+      </div>
+      <div class="contenu_onglets" id="MTEVD">
+         <table width="1600" border="1">
+            <tr style="background: #F1F8FF;">
+               <th width="5%" rowspan="1">M</th>
+            </tr>
+            <tr>
+               <td></td>
+            </tr>
+         </table>
+         <table width="1600" border="1">
+            <tr style="background: #F1F8FF;">
+               <th width="5%" rowspan="1">T</th>
+            </tr>
+            <tr>
+               <td></td>
+            </tr>
+         </table>
+         <table width="1600" border="1">
+            <tr style="background: #F1F8FF;">
+               <th width="5%" rowspan="1">E</th>
+            </tr>
+            <tr>
+               <td></td>
+            </tr>
+         </table>
+         <table width="1600" border="1">
+            <tr style="background: #F1F8FF;">
+               <th width="4.25%" rowspan="1">V</th>
+            </tr>
+            <tr>
+               <td></td>
+            </tr>
+         </table>
+         <table width="1600" border="1">
+            <tr style="background: #F1F8FF;">
+               <th width="4.5%" rowspan="1">D</th>
+            </tr>
+            <tr>
+               <td></td>
+            </tr>
+         </table>
+      </div>
+      <div class="contenu_onglets" id="ACT-VIE-BESOINS">
+         <h3>ACTIVITES DE LA VIE QUOTIDIENNE et BESOINS PERTURBES</h3>
+         <table width="1600" border="1">
+            <tr style="color: #fff; background: #8BB502;">
+               <th width="100%" colspan="2">Activités de la vie quotidienne et besoins perturbés </th>
+            </tr>
+            <tr style="background: #FFFFD1;">
+               <th width="50%" colspan="1">15 jours avant l'hospitalisation</th>
+               <th width="50%" colspan="1">A l'Entrée dans l'unité des soins</th>
+            </tr>
+            <tr>
+               <td>
+                  <result>
+                     <p style="font-family: Lucida Console, Courier, monospace;font-size: 14px;">Régime: Oui
+                        				
+                     </p>
+                     <variable name="act-vie-besoinChamp1" value="Régime" value2=""></variable>
+                     <p style="font-family: Lucida Console, Courier, monospace;font-size: 14px;">Trouble de l'audition: Oui
+                        				
+                     </p>
+                     <variable name="act-vie-besoinChamp2" value="Trouble de l'audition" value2=""></variable>
+                     <p style="font-family: Lucida Console, Courier, monospace;font-size: 14px;">Trouble de la vue: Oui
+                        				
+                     </p>
+                     <variable name="act-vie-besoinChamp3" value="Trouble de la vue" value2=""></variable>
+                  </result>
+               </td>
+               <td>
+                  <p style="font-family: Lucida Console, Courier, monospace;font-size: 14px;">Prothèse dentaire présente</p>
+                  <p style="font-family: Lucida Console, Courier, monospace;font-size: 14px;"> -&gt; Haut + Bas</p>
+                  <p style="font-family: Lucida Console, Courier, monospace;font-size: 14px;">Trouble de la vue</p>
+                  <p style="font-family: Lucida Console, Courier, monospace;font-size: 14px;"> -&gt; lunettes</p>
+                  <p style="font-family: Lucida Console, Courier, monospace;font-size: 14px;">Trouble de l'audition</p>
+                  <p style="font-family: Lucida Console, Courier, monospace;font-size: 14px;"> -&gt; App auditif D+ G</p>
+                  <result></result>
+               </td>
+            </tr>
+         </table>
+      </div>
+      <div class="contenu_onglets" id="AIDE">
+         <h3>AIDANTS ou Entourage / Famille / Représentant</h3>
+         <table width="1600" border="1">
+            <tr style="background: #F3FFE3;">
+               <th width="100%" colspan="50">AIDANTS ou Entourage / Famille / Représentant</th>
+            </tr>
+            <tr style="background: #F6F9FF;">
+               <th width="25%" colspan="13">Personnes à prévenir saisies dans Hexagone par le bureau des entrées</th>
+            </tr>
+            <tr>
+               <td>
+                  <result></result>
+               </td>
+            </tr>
+            <tr style="background: #F6F9FF;">
+               <th width="100%" colspan="13">Personnes à prévenir saisies par les unités de soin</th>
+            </tr>
+            <tr>
+               <td>
+                  <result></result>
+               </td>
+            </tr>
+            <tr style="background: #F6F9FF;">
+               <th width="100%" colspan="13">Personnes de confiance</th>
+            </tr>
+            <tr>
+               <td>
+                  <result></result>
+               </td>
+            </tr>
+            <tr style="background: #F6F9FF;">
+               <th width="100%" colspan="13">Intervenants extérieurs</th>
+            </tr>
+            <tr>
+               <td>
+                  <result></result>
+               </td>
+            </tr>
+            <tr style="background: #F6F9FF;">
+               <th width="100%" colspan="13">Protection juridique</th>
+            </tr>
+            <tr>
+               <td>
+                  <result></result>
+               </td>
+            </tr>
+            <tr style="background: #F6F9FF;">
+               <th width="100%" colspan="13">Intervenants / Aide à domicile</th>
+            </tr>
+            <tr>
+               <td>
+                  <result></result>
+               </td>
+            </tr>
+         </table>
+      </div>
+      <div class="contenu_onglets" id="FRAGILE">
+         <h3>GRILLE de FRAGILITE</h3>
+         <table width="1600" border="1">
+            <tr style="background: #E2F0CB;">
+               <th width="100%" colspan="1">Grille de Fragilité</th>
+               <p> A faire passer dans les 48h suivant l'admission ! </p>
+            </tr>
+            <tr>
+               <td></td>
+            </tr>
+            <tr>
+               <td></td>
+            </tr>
+         </table>
+      </div>
+   </body>
+</html>

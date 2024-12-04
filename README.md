@@ -1,0 +1,1 @@
+Pour le regarder, il vous suffit de télécharger le github en appuyant sur le Bouton 'Download Zip' et puis ensuite dans le répertoire télécharger, ouvrir le fichier "index.html" pour accéder au portfolio.
